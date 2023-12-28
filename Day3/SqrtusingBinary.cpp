@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int binarySearch(int n);
-int morePrecision(int n, int precision, int temps);
+double morePrecision(int n, int precision, int temps);
 
 int main()
 {
@@ -43,15 +43,16 @@ int binarySearch(int n)
     return ans;
     
 }
-int morePrecision(int n, int precision, int temps)
+
+double morePrecision(int n, int precision, int temps)
 {
-    int factor = 1;
-    int ans = temps;
-    for (int i = 0; i < precision; i++)
+    double factor = 1;
+    double ans = temps;
+    for (int i = 0; i<precision; i++)
     {
         /* code */
-        factor /= 10;
-        for (int j = ans;  j*j<n; j+factor)
+        factor=factor/10;
+        for (double j = ans;  j*j<n; j= j+factor)
         {
             /* code */
             ans = j;
@@ -59,6 +60,4 @@ int morePrecision(int n, int precision, int temps)
         
     }
     return ans;
-
-
 }
