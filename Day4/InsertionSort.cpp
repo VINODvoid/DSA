@@ -2,10 +2,27 @@
 using namespace std;
 void InsertionSort(int n,int arr[])
 {
-    for (int i = 0; i <n; i++)
+    // for (int i = 0; i <n; i++)
+    // {
+    //     int temp = arr[i];int j=i-1;
+    //     for(;j>=0;j--)
+    //     {
+    //         if(arr[j]>temp)
+    //         {
+    //             arr[j+1]= arr[j];
+    //         }
+    //         else{
+    //             break;
+    //         }
+    //     }
+    //     arr[j+1] = temp;
+    // }
+    int i=0;
+    while(i<n)
     {
-        int temp = arr[i];int j=i-1;
-        for(;j>=0;j--)
+        int temp = arr[i];
+        int j=i-1;
+        while(j>=0)
         {
             if(arr[j]>temp)
             {
@@ -14,10 +31,11 @@ void InsertionSort(int n,int arr[])
             else{
                 break;
             }
+            j--;
         }
-        arr[j+1] = temp;
+        i++;
+        arr[j+1]=temp;
     }
-    
 
 }
 int main()
