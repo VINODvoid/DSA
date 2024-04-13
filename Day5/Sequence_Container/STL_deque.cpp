@@ -1,3 +1,6 @@
+//? In C++ STL, deque is an indexed sequence container that allows fast insertion and deletion at both the beginning and the end.
+//? Deque stands for double-ended queue. It is similar to a vector, but it allows insertion and deletion at both ends.
+
 #include <iostream>
 #include <deque>
 using namespace std;

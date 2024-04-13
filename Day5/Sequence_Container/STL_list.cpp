@@ -1,3 +1,6 @@
+//? In C++ STL, the list is a sequence container that allows non-contiguous memory allocation. It is a doubly linked list.
+//? The list is a standard C++ container that supports constant time insertion and removal of elements from anywhere in the container.
+
 #include <iostream>
 #include <list>
 using namespace std;
