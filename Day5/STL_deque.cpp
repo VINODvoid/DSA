@@ -30,6 +30,18 @@ int main()
 
     cout<<"Front element is: "<<deq.front()<<endl; //* front() is used to get the first element of the deque
     cout<<"Back element is: "<<deq.back()<<endl; //* back() is used to get the last element of the deque
+
+
+    cout<<"Before erasing  "<<deq.size()<<endl;
+    deq.erase(deq.begin(),deq.begin()+1); //* erase() is used to remove elements from the deque
+    cout<<"After erasing  "<<deq.size()<<endl;
+
+    for(int i:deq)
+    {
+        cout<<i<<" ";
+    }
+
+
     return 0;
 
 }
